@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stratagems_nav_graph"
+    app:startDestination="@id/stratagemsListFragment">
+
+    <fragment
+        android:id="@+id/stratagemsListFragment"
+        android:name="com.goodcomp.strategems.list.StratagemsListFragment"
+        android:label="StratagemsListFragment"
+        tools:layout="@layout/fragment_stratagems_list" >
+        <action
+            android:id="@+id/action_stratagemsListFragment_to_stratagemDetailFragment"
+            app:destination="@id/stratagemDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/stratagemDetailFragment"
+        android:name="com.goodcomp.strategems.detail.StratagemDetailFragment"
+        android:label="StratagemDetailFragment"
+        tools:layout="@layout/fragment_stratagem_detail" >
+        <argument
+            android:name="stratagem"
+            app:argType="com.goodcomp.core.domain.entity.Stratagem" />
+    </fragment>
+
+</navigation>

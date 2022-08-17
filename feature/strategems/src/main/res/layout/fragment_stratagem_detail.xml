@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_picture"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@null"
+                tools:src="@drawable/death_to_the_false_emperor"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="21sp"
+                    tools:text="DEATH TO THE FALSE EMPEROR!" />
+
+                <TextView
+                    android:id="@+id/tv_faction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    tools:text="Chaos Space Marines" />
+
+                <TextView
+                    android:id="@+id/tv_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    tools:text="Battle Tactic Stratagem" />
+
+                <TextView
+                    android:id="@+id/tv_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="1CP/2CP" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:text="The seething hatred that the Heretic Astartes harbour for the Corpse Emperor and his weakling, thin-blooded Space Marines is a weapon unto itself." />
+
+        <TextView
+            android:id="@+id/tv_effect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            tools:text="Use this Stratagem in the Fight phase, when a TRAITORIS ASTARTES unit from your army is selected to fight. Until the end of the phase, each time a HERETIC ASTARTES model in that unit makes a melee attack against an ADEPTUS ASTARTES or SANCTIC ASTARTES unit, you can re-roll the hit roll." />
+
+    </LinearLayout>
+
+</ScrollView>
